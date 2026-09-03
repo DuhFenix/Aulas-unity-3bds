@@ -29,7 +29,7 @@ public class cubo : MonoBehaviour
             rg.linearVelocity = new Vector3(-speed, 0, 0);
         }
 
-        if (Keyboard.current.spaceKey.isPressed)
+        if (Keyboard.current.spaceKey.wasReleasedThisFrame)
         {
             Instantiate(bala, pontoTiro.transform.position, pontoTiro.transform.rotation);
         }
