@@ -18,7 +18,6 @@ public class chamarInimigos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Ultima invocação: " + ultimoInvocacao);
         if (Time.time - ultimoInvocacao >= intervalo)
         {
             InvocarInimigo();

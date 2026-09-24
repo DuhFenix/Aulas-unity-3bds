@@ -14,4 +14,13 @@ public class Bala : MonoBehaviour
     {
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
     }
+
+    void OnTriggerEnter(Collider obj)
+    {
+        if (obj.CompareTag("inimigo"))
+        {
+            Destroy(obj.gameObject);
+            Destroy(gameObject);
+        }
+    }
 }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1070381888830821553}
   - component: {fileID: 2717155864332556127}
   - component: {fileID: 1512650820272864666}
+  - component: {fileID: -7294097836223470671}
   m_Layer: 0
   m_Name: Inimigo
   m_TagString: inimigo
@@ -107,7 +108,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -125,3 +126,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b31436d01f0df164984e08500e461a87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Inimigo
+--- !u!54 &-7294097836223470671
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8229607398874791066}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
