@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class cubo : MonoBehaviour
 {
@@ -32,6 +33,15 @@ public class cubo : MonoBehaviour
         if (Keyboard.current.spaceKey.wasReleasedThisFrame)
         {
             Instantiate(bala, pontoTiro.transform.position, pontoTiro.transform.rotation);
+        }
+    }
+
+    void OnTriggerEnter(Collider obj)
+    {
+        if (obj.CompareTag("inimigo"))
+        {
+            Destroy(gameObject);
+            SceneManager.LoadScene(0);
         }
     }
 }
