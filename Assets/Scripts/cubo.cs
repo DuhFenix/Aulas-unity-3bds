@@ -1,3 +1,5 @@
+using NUnit.Framework.Internal;
+using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -40,6 +42,7 @@ public class cubo : MonoBehaviour
     {
         if (obj.CompareTag("inimigo"))
         {
+            Bala.pontosValor = 0;
             Destroy(gameObject);
             SceneManager.LoadScene(0);
         }
