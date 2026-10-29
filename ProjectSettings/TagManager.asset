@@ -6,6 +6,7 @@ TagManager:
   tags:
   - inimigo
   - bala
+  - parede
   layers:
   - Default
   - TransparentFX

@@ -43,5 +43,10 @@ public class Bala : MonoBehaviour
             Destroy(obj.gameObject);
             Destroy(gameObject);
         }
+
+        if(obj.CompareTag("parede"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
